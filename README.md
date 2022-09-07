@@ -13,8 +13,9 @@ I built this using the very helpful instructions found here: https://daveparsons
 You need node installed. You need to download the `kindlegen` script from Amazon.
 
 - Clone this repository
-
-- Place the `kindlegen` script in the directory
+- ~~Place the `kindlegen` script in the directory~~
+- Install Kindle Previewer (recommended with Homebrew)
+- KINDLEGEN="/Applications/Kindle Previewer 3.app/Contents/lib/fc/bin/kindlegen"
 
 - Create a `config.json` object in the directory with the following configuration:
 
@@ -27,6 +28,6 @@ You need node installed. You need to download the `kindlegen` script from Amazon
 }
 ```
 
-- Run `sh convert.sh`
+- Run `node index && $KINDLEGEN out/out.html`
 
 - You'll find your output file in the `./out` directory

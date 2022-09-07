@@ -2,4 +2,4 @@
 set -e
 
 node index
-./kindlegen out/*.html
+$KINDLEGEN out/*.html
